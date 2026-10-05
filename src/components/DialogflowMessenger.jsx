@@ -20,8 +20,12 @@ const shellStyles = `
 
   df-messenger-chat {
     display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
+    min-height: 0 !important;
+    overflow: clip !important;
   }
 `;
 
@@ -32,11 +36,52 @@ const chatStyles = `
     inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: clip !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+
+  df-messenger-titlebar,
+  df-messenger-user-input {
+    flex: 0 0 auto !important;
+  }
+
+  df-message-list {
+    display: flex !important;
+    flex: 1 1 0 !important;
+    min-height: 0 !important;
+    overflow: clip !important;
+  }
+`;
+
+const messageListStyles = `
+  :host {
+    display: flex !important;
+    flex: 1 1 0 !important;
+    min-height: 0 !important;
+    overflow: clip !important;
+  }
+
+  .message-list-wrapper {
+    display: flex !important;
+    flex: 1 1 0 !important;
+    min-height: 0 !important;
+    overflow: clip !important;
+  }
+
+  #messageList {
+    flex: 1 1 0 !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
   }
 `;
 
@@ -131,7 +176,15 @@ const auraFitThemeStyles = `
 `;
 
 function injectStyles(shadowRoot, id, css) {
-  if (!shadowRoot || shadowRoot.getElementById(id)) return;
+  if (!shadowRoot) return;
+
+  const existingStyle = shadowRoot.getElementById(id);
+  if (existingStyle) {
+    if (existingStyle.textContent !== css) {
+      existingStyle.textContent = css;
+    }
+    return;
+  }
 
   const style = document.createElement('style');
   style.id = id;
@@ -173,6 +226,15 @@ function embedMessenger(messenger, observers, observedRoots) {
   chat.requestUpdate?.();
   injectStyles(chat.shadowRoot, 'aurafit-chat-styles', chatStyles);
 
+  const messageList = chat.shadowRoot.querySelector('df-message-list');
+  if (messageList?.shadowRoot) {
+    injectStyles(
+      messageList.shadowRoot,
+      'aurafit-message-list-layout-styles',
+      messageListStyles,
+    );
+  }
+
   const titlebar = chat.shadowRoot.querySelector('df-messenger-titlebar');
   if (titlebar?.shadowRoot) {
     injectStyles(
@@ -207,7 +269,7 @@ function embedMessenger(messenger, observers, observedRoots) {
     }
   }
 
-  return Boolean(titlebar?.shadowRoot);
+  return Boolean(titlebar?.shadowRoot && messageList?.shadowRoot);
 }
 
 function SetupPreview() {

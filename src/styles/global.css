@@ -550,7 +550,7 @@ df-messenger {
   inset: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: clip;
   --df-messenger-bot-message: #1b2631;
   --df-messenger-button-titlebar-color: #151d27;
   --df-messenger-button-titlebar-font-color: #f4f7fa;
