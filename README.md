@@ -15,6 +15,35 @@ Para generar la versión de producción:
 npm run build
 ```
 
+## Webhook de Dialogflow
+
+El backend del asistente se ejecuta en otro terminal con:
+
+```bash
+npm run dev:webhook
+```
+
+El endpoint local es `POST http://localhost:3001/webhook`. Dialogflow ES exige
+una URL HTTPS pública, por lo que para conectarlo debes desplegar este servidor
+o exponer el puerto `3001` mediante un túnel HTTPS y configurar la URL resultante
+en **Fulfillment > Webhook** del agente.
+
+El webhook utiliza `queryResult.action` y admite estas acciones:
+
+- `rutina.crear` con `objetivo`, `nivel` y `dias`;
+- `rutina.consultar` para recuperar la última rutina de la misma sesión;
+- `ejercicio.consultar` con el parámetro `ejercicio`.
+
+Las rutinas se guardan en memoria por el identificador completo de sesión. Al
+reiniciar el servidor se borran; el repositorio está desacoplado para poder
+sustituirlo más adelante por almacenamiento persistente.
+
+Para ejecutar las pruebas del webhook:
+
+```bash
+npm test
+```
+
 ## Conectar Dialogflow
 
 1. Copia `.env.example` como `.env` (si todavía no existe).
@@ -40,3 +69,6 @@ src/
 ├── config/        Configuración de Dialogflow
 └── styles/        Sistema visual y responsive
 ```
+
+La lógica del webhook se encuentra en `server/`, separada en datos, servicios,
+repositorio y adaptador HTTP.
