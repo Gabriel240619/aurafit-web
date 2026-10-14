@@ -1,14 +1,16 @@
 import { exerciseLibrary, weeklySplits } from '../data/routineTemplates.js';
 
 const objectiveAliases = new Map([
-  ['ganar musculo', 'ganar_musculo'], ['ganancia muscular', 'ganar_musculo'],
-  ['hipertrofia', 'ganar_musculo'], ['perder peso', 'perder_peso'],
-  ['adelgazar', 'perder_peso'], ['mejorar resistencia', 'resistencia'],
-  ['resistencia', 'resistencia'], ['mantenerse en forma', 'mantenimiento'],
-  ['mantenimiento', 'mantenimiento'],
+  ['ganar musculo', 'ganar_musculo'], ['ganar masa', 'ganar_musculo'],
+  ['ganar masa muscular', 'ganar_musculo'], ['hipertrofia', 'ganar_musculo'],
+  ['perder grasa', 'perder_grasa'], ['perder peso', 'perder_grasa'],
+  ['adelgazar', 'perder_grasa'], ['definir', 'perder_grasa'],
+  ['mantener', 'mantener'], ['mantenerme', 'mantener'],
+  ['mantenerme en forma', 'mantener'], ['mantenimiento', 'mantener'],
 ]);
 
 const levelAdjustments = { principiante: -1, intermedio: 0, avanzado: 1 };
+const validObjectives = new Set(['ganar_musculo', 'perder_grasa', 'mantener']);
 
 export function normalizeValue(value) {
   return String(value ?? '').trim().toLocaleLowerCase('es')
@@ -27,6 +29,9 @@ export function validateRoutineInput({ objetivo, nivel, dias }) {
   const dayCount = Number(dias);
 
   if (!normalizedObjective) return { error: 'Indica el objetivo de la rutina.' };
+  if (!validObjectives.has(normalizedObjective)) {
+    return { error: 'El objetivo debe ser ganar músculo, perder grasa o mantener.' };
+  }
   if (!normalizedLevel) return { error: 'Indica tu nivel de entrenamiento.' };
   if (!Number.isInteger(dayCount) || dayCount < 1 || dayCount > 7) {
     return { error: 'El número de días debe ser un entero entre 1 y 7.' };
@@ -44,7 +49,7 @@ export function generateRoutine({ objetivo, nivel, dias }) {
     ejercicios: exerciseLibrary[templateKey].map(([exerciseName, series, repeticiones]) => ({
       nombre: exerciseName,
       series: Math.max(2, series + levelAdjustments[nivel]),
-      repeticiones: objetivo === 'resistencia' || objetivo === 'perder_peso' ? '12-15' : repeticiones,
+      repeticiones: objetivo === 'perder_grasa' ? '12-15' : repeticiones,
     })),
   }));
   return { objetivo, nivel, dias, plan };

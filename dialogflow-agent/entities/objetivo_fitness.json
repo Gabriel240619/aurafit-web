@@ -1,0 +1,9 @@
+{
+  "id": "4b1e3ada-c3a7-47f8-8042-61e184bad3fe",
+  "name": "objetivo_fitness",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

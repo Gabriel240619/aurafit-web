@@ -1,0 +1,277 @@
+[
+  {
+    "id": "e9dcbff6-d30a-4006-a90a-b6c16efad7d0",
+    "data": [
+      {
+        "text": "¿Cómo se hace ",
+        "userDefined": false
+      },
+      {
+        "text": "sentadilla",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f6668d00-3612-41de-a77c-a9e0709b0211",
+    "data": [
+      {
+        "text": "Explícame el ",
+        "userDefined": false
+      },
+      {
+        "text": "press banca",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "4962022f-b797-4d38-aa69-3aa902df647d",
+    "data": [
+      {
+        "text": "¿Qué técnica tiene el ",
+        "userDefined": false
+      },
+      {
+        "text": "peso muerto rumano",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0443ed20-14e8-4629-adc8-66050926658a",
+    "data": [
+      {
+        "text": "Quiero aprender a hacer ",
+        "userDefined": false
+      },
+      {
+        "text": "dominadas",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8cc43e0f-bff8-4481-ad9c-fbfe2efe21b4",
+    "data": [
+      {
+        "text": "Muéstrame la técnica de ",
+        "userDefined": false
+      },
+      {
+        "text": "remo",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1ad16a43-b71c-4013-a005-6e949853272d",
+    "data": [
+      {
+        "text": "Errores comunes en ",
+        "userDefined": false
+      },
+      {
+        "text": "press militar",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "363c419d-d2cc-441f-ac4d-3a95b86e3a9b",
+    "data": [
+      {
+        "text": "¿Qué músculos trabajan las ",
+        "userDefined": false
+      },
+      {
+        "text": "zancadas",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "76b801a5-3611-49b6-a556-feaf51311182",
+    "data": [
+      {
+        "text": "Ayúdame con la técnica de ",
+        "userDefined": false
+      },
+      {
+        "text": "peso muerto",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "5c2f3e9b-8ed6-4c77-a3af-e4f351049a75",
+    "data": [
+      {
+        "text": "¿Cómo ejecuto la ",
+        "userDefined": false
+      },
+      {
+        "text": "plancha",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f5bca6d7-5f2f-459d-ad8a-5223a520f92c",
+    "data": [
+      {
+        "text": "La ",
+        "userDefined": false
+      },
+      {
+        "text": "sentadilla",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      },
+      {
+        "text": ", ¿qué músculos trabaja?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1da66aec-f9b3-41ba-a357-5f597a418af4",
+    "data": [
+      {
+        "text": "Para el ",
+        "userDefined": false
+      },
+      {
+        "text": "press banca",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      },
+      {
+        "text": ", ¿qué errores debo evitar?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "260a2197-9e5c-4306-a02e-b72d91d55159",
+    "data": [
+      {
+        "text": "Enséñame a hacer ",
+        "userDefined": false
+      },
+      {
+        "text": "dominadas",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      },
+      {
+        "text": " correctamente",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "bdf343f5-14cb-47cf-abb3-4b17ce29feb4",
+    "data": [
+      {
+        "text": "Quiero consultar el ejercicio ",
+        "userDefined": false
+      },
+      {
+        "text": "press militar",
+        "meta": "@ejercicio",
+        "alias": "ejercicio",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

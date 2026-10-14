@@ -1,0 +1,243 @@
+[
+  {
+    "id": "514e746f-13bb-42a0-b413-a7167df0e2ed",
+    "data": [
+      {
+        "text": "cuántas calorías tiene ",
+        "userDefined": false
+      },
+      {
+        "text": "un plátano",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "184d4ba4-04b4-4569-a24b-b8c4afea0a90",
+    "data": [
+      {
+        "text": "calorías de ",
+        "userDefined": false
+      },
+      {
+        "text": "una manzana",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c51c24bb-1e15-4f5d-88fa-a9166b2fddf4",
+    "data": [
+      {
+        "text": "quiero saber las calorías del ",
+        "userDefined": false
+      },
+      {
+        "text": "arroz",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7d5038ce-5dd4-436f-8d23-38016535bd7a",
+    "data": [
+      {
+        "text": "qué valor nutricional tiene ",
+        "userDefined": false
+      },
+      {
+        "text": "el aguacate",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0be2fb0f-9074-43d2-96d9-070b277693ad",
+    "data": [
+      {
+        "text": "consulta las calorías de ",
+        "userDefined": false
+      },
+      {
+        "text": "100 gramos de pollo",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "459b17fc-0842-469a-8f5e-a0539ce15212",
+    "data": [
+      {
+        "text": "información nutricional de ",
+        "userDefined": false
+      },
+      {
+        "text": "la avena",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8e964bda-875f-46db-b8d8-a5c19744db66",
+    "data": [
+      {
+        "text": "cuántas kcal tiene ",
+        "userDefined": false
+      },
+      {
+        "text": "el salmón",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6220cb93-eba1-4e1c-b047-5b89b64ead3e",
+    "data": [
+      {
+        "text": "dime las calorías de ",
+        "userDefined": false
+      },
+      {
+        "text": "un yogur natural",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e8de5321-cc4e-4f17-b980-a52b3b72a89a",
+    "data": [
+      {
+        "text": "calcula las calorías de ",
+        "userDefined": false
+      },
+      {
+        "text": "dos huevos",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "964c05c9-77fe-4592-94b6-2c079e7a2d7e",
+    "data": [
+      {
+        "text": "quiero consultar ",
+        "userDefined": false
+      },
+      {
+        "text": "una naranja",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "915152aa-00f3-46ce-b176-94b12c838b72",
+    "data": [
+      {
+        "text": "qué calorías aporta ",
+        "userDefined": false
+      },
+      {
+        "text": "la pasta",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f027daf5-fa9e-4332-903c-7609f92ae719",
+    "data": [
+      {
+        "text": "consulta nutricional para ",
+        "userDefined": false
+      },
+      {
+        "text": "pan integral",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2005d090-80b8-4526-9668-aaacaf688050",
+    "data": [
+      {
+        "text": "Consultar calorías",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

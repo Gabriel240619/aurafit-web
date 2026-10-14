@@ -1,0 +1,132 @@
+[
+  {
+    "id": "204f5f88-ab92-4aef-a049-5db7b9fcff86",
+    "data": [
+      {
+        "text": "qué es AuraFit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "86d9d2c1-145d-4bc3-90b5-baaf89a21be3",
+    "data": [
+      {
+        "text": "quién eres",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3dbf50a9-3078-4fd9-9852-53791e451eb1",
+    "data": [
+      {
+        "text": "háblame de AuraFit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c8552172-a3e4-4455-b05e-cacf860dfa7c",
+    "data": [
+      {
+        "text": "qué tipo de bot eres",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "35556d6e-d5df-4234-840b-284bff9fada7",
+    "data": [
+      {
+        "text": "para qué existes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "5e462d65-265b-4330-878d-c5c1702f6c42",
+    "data": [
+      {
+        "text": "qué haces exactamente",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "916c4b96-4a0a-48ff-bd1c-ffc2fc8dc87f",
+    "data": [
+      {
+        "text": "eres un entrenador personal",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c20c32bf-71f5-4100-bbfb-9bd4cda68846",
+    "data": [
+      {
+        "text": "qué es este asistente",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "769388ed-f410-46ec-ad70-5a3f6e5107b2",
+    "data": [
+      {
+        "text": "quiero saber qué es AuraFit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f064c8ab-2672-4870-afaf-0a2475ba377d",
+    "data": [
+      {
+        "text": "explícame quién eres",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

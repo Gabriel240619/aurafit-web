@@ -1,0 +1,145 @@
+[
+  {
+    "id": "5b65c6aa-8558-4784-b874-e42593b9b09a",
+    "data": [
+      {
+        "text": "quiero ver mi rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "365bfc2b-4cf5-4820-be01-80a365c44acf",
+    "data": [
+      {
+        "text": "muéstrame mi rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a62746b8-4012-4c32-aaa9-cd1d7b8b8137",
+    "data": [
+      {
+        "text": "cuál es mi rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "27986d0c-2d58-4b1d-b4a9-3dfb3940b070",
+    "data": [
+      {
+        "text": "consultar rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3fb61373-0348-4278-998f-2f4ccd238c77",
+    "data": [
+      {
+        "text": "qué entrenamiento tengo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "4914972d-d349-4bf0-9f3c-661da983e43f",
+    "data": [
+      {
+        "text": "ver plan de entrenamiento",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "9b55874e-0ce4-4e7b-a255-6586ec6fde7c",
+    "data": [
+      {
+        "text": "recuérdame la rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "939a7969-5b9f-44a9-94d5-5ab3a36df92d",
+    "data": [
+      {
+        "text": "qué toca entrenar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ac8d2126-b557-476e-aa5f-c28548fe25e0",
+    "data": [
+      {
+        "text": "enséñame el plan",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "03f2c5e6-a1f1-400b-96dc-c3e950ac89a0",
+    "data": [
+      {
+        "text": "quiero consultar mi plan",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "5cce17da-4c0f-419f-8225-ce43fdc79cd0",
+    "data": [
+      {
+        "text": "Ver rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

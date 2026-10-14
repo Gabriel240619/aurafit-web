@@ -1,0 +1,96 @@
+{
+  "id": "afefac4f-747c-4a41-b80e-4a009a624900",
+  "name": "aura.sobre_bot",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "aura.sobre_bot",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Soy AuraFit, un asistente conversacional orientado a la planificación de ejercicio y al seguimiento básico de alimentación. Mis recomendaciones son orientativas.",
+            "AuraFit te ayuda a organizar rutinas, registrar entrenamientos y comidas y consultar tu progreso durante la conversación.",
+            "Funciono como apoyo para planificar y registrar hábitos de entrenamiento y alimentación. No sustituyo la valoración de un profesional sanitario.",
+            "Soy un chatbot de fitness: puedo crear planes sencillos, guardar registros dentro de la sesión y consultar información nutricional cuando el servicio esté disponible."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "description",
+                  "title": "AuraFit",
+                  "text": [
+                    "• Planificación de rutinas sencillas y personalizadas.",
+                    "• Registro de entrenamientos y alimentación.",
+                    "• Resúmenes de actividad y comidas de la sesión.",
+                    "• Consulta nutricional mediante servicio externo.",
+                    "• Uso orientativo; no sustituye asesoramiento médico o nutricional profesional."
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "text": "¿Qué quieres hacer ahora?",
+                  "options": [
+                    {
+                      "text": "Crear rutina"
+                    },
+                    {
+                      "text": "Registrar entrenamiento"
+                    },
+                    {
+                      "text": "Registrar comida"
+                    },
+                    {
+                      "text": "Consultar calorías"
+                    },
+                    {
+                      "text": "Ver progreso"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

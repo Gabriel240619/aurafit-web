@@ -1,0 +1,303 @@
+[
+  {
+    "id": "d862b246-9eca-4b52-b7c1-1462e9092eb2",
+    "data": [
+      {
+        "text": "crear rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "5f7fe0c9-e23f-4f0d-b48c-f99975dd6947",
+    "data": [
+      {
+        "text": "quiero una rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0123ce7f-1b6c-4c65-84ca-c459b1fcdbb2",
+    "data": [
+      {
+        "text": "créame una rutina de entrenamiento",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0513f215-3f41-4509-b580-13e59c05dbe7",
+    "data": [
+      {
+        "text": "necesito un plan de ejercicios",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "85f2f0a4-2ed4-4d49-b936-368ffbc4a8b2",
+    "data": [
+      {
+        "text": "quiero una rutina para ",
+        "userDefined": false
+      },
+      {
+        "text": "ganar músculo",
+        "meta": "@objetivo_fitness",
+        "alias": "objetivo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f378d161-c3a1-496a-9463-ef9203919e69",
+    "data": [
+      {
+        "text": "soy ",
+        "userDefined": false
+      },
+      {
+        "text": "principiante",
+        "meta": "@nivel_fitness",
+        "alias": "nivel",
+        "userDefined": true
+      },
+      {
+        "text": " y quiero una rutina",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "38b2d6b9-e296-4579-ba50-80519fc845a4",
+    "data": [
+      {
+        "text": "puedo entrenar ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "dias",
+        "userDefined": true
+      },
+      {
+        "text": " días por semana",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "54667b96-acd9-4a8d-ae61-cf0a50fad9ea",
+    "data": [
+      {
+        "text": "quiero entrenar ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "meta": "@sys.number",
+        "alias": "dias",
+        "userDefined": true
+      },
+      {
+        "text": " días para ",
+        "userDefined": false
+      },
+      {
+        "text": "perder grasa",
+        "meta": "@objetivo_fitness",
+        "alias": "objetivo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e3ce76c9-0de4-45f1-8c7e-7aaa681dfb66",
+    "data": [
+      {
+        "text": "hazme una rutina de ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "dias",
+        "userDefined": true
+      },
+      {
+        "text": " días, soy ",
+        "userDefined": false
+      },
+      {
+        "text": "intermedio",
+        "meta": "@nivel_fitness",
+        "alias": "nivel",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b91cf5c5-f6ab-40d0-91e7-414a9f59bb42",
+    "data": [
+      {
+        "text": "mi objetivo es ",
+        "userDefined": false
+      },
+      {
+        "text": "mantenerme",
+        "meta": "@objetivo_fitness",
+        "alias": "objetivo",
+        "userDefined": true
+      },
+      {
+        "text": " y soy ",
+        "userDefined": false
+      },
+      {
+        "text": "principiante",
+        "meta": "@nivel_fitness",
+        "alias": "nivel",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3e723428-6fdd-4482-a7d8-dd4ba80e937c",
+    "data": [
+      {
+        "text": "ganar masa muscular",
+        "meta": "@objetivo_fitness",
+        "alias": "objetivo",
+        "userDefined": true
+      },
+      {
+        "text": ", nivel ",
+        "userDefined": false
+      },
+      {
+        "text": "avanzado",
+        "meta": "@nivel_fitness",
+        "alias": "nivel",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "5",
+        "meta": "@sys.number",
+        "alias": "dias",
+        "userDefined": true
+      },
+      {
+        "text": " días",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "056f9f7d-573b-4249-ad1f-71fd46d0038f",
+    "data": [
+      {
+        "text": "haz un plan de ",
+        "userDefined": false
+      },
+      {
+        "text": "4",
+        "meta": "@sys.number",
+        "alias": "dias",
+        "userDefined": true
+      },
+      {
+        "text": " días para ",
+        "userDefined": false
+      },
+      {
+        "text": "ganar músculo",
+        "meta": "@objetivo_fitness",
+        "alias": "objetivo",
+        "userDefined": true
+      },
+      {
+        "text": " siendo ",
+        "userDefined": false
+      },
+      {
+        "text": "intermedio",
+        "meta": "@nivel_fitness",
+        "alias": "nivel",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "91c17c8b-327a-419d-aaa6-e6e1e2abaa2c",
+    "data": [
+      {
+        "text": "quiero un entrenamiento semanal para ",
+        "userDefined": false
+      },
+      {
+        "text": "perder grasa",
+        "meta": "@objetivo_fitness",
+        "alias": "objetivo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

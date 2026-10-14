@@ -1,0 +1,132 @@
+[
+  {
+    "id": "4962b93f-3d50-4bed-b04e-47593281465f",
+    "data": [
+      {
+        "text": "adiós",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "db09c9f2-1b44-4303-b742-f1799476026f",
+    "data": [
+      {
+        "text": "hasta luego",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "92ff9740-efd6-45b2-a61f-065bd511bb83",
+    "data": [
+      {
+        "text": "nos vemos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "de60ea88-1183-4123-970b-5f856bc38779",
+    "data": [
+      {
+        "text": "chao",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c9043b0f-77a0-4da5-b58f-2eb7b28078e4",
+    "data": [
+      {
+        "text": "me voy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "630c616b-0c13-476c-aa54-19ae8467c3d1",
+    "data": [
+      {
+        "text": "eso es todo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "51c3c51d-3063-4a33-8c87-31f0613851fd",
+    "data": [
+      {
+        "text": "terminar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "fad6326c-158b-48da-a137-045b9d0eacea",
+    "data": [
+      {
+        "text": "hasta la próxima",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "40aa5072-5b0a-4314-b9f7-36cd134a90ab",
+    "data": [
+      {
+        "text": "gracias, adiós",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "fa787eef-e5f2-4aa7-9385-d5ff3e8809e2",
+    "data": [
+      {
+        "text": "cerrar conversación",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

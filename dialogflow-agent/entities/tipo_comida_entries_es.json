@@ -1,0 +1,49 @@
+[
+  {
+    "value": "desayuno",
+    "synonyms": [
+      "desayuno",
+      "desayunar",
+      "he desayunado",
+      "primera comida"
+    ]
+  },
+  {
+    "value": "almuerzo",
+    "synonyms": [
+      "almuerzo",
+      "almorzar",
+      "media mañana",
+      "tentempié de media mañana"
+    ]
+  },
+  {
+    "value": "comida",
+    "synonyms": [
+      "comida",
+      "comer",
+      "he comido",
+      "comida principal",
+      "comida del mediodía"
+    ]
+  },
+  {
+    "value": "merienda",
+    "synonyms": [
+      "merienda",
+      "merendar",
+      "snack",
+      "tentempié",
+      "comida de la tarde"
+    ]
+  },
+  {
+    "value": "cena",
+    "synonyms": [
+      "cena",
+      "cenar",
+      "he cenado",
+      "comida de la noche"
+    ]
+  }
+]

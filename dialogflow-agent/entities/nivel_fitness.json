@@ -1,0 +1,9 @@
+{
+  "id": "8705290f-fb25-43aa-9178-0747be0b88d2",
+  "name": "nivel_fitness",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

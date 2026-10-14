@@ -1,0 +1,9 @@
+{
+  "id": "eeb29f76-447b-4a0c-9ae7-33b9ccac5507",
+  "name": "tipo_comida",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "f1c2a426-3499-4efd-868f-a581e5b073e2",
+    "data": [
+      {
+        "text": "hola",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "990c739b-1262-4344-b28d-2c9d38a6349c",
+    "data": [
+      {
+        "text": "buenas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "226ce71a-5b65-401b-8a37-5277ac2b2c25",
+    "data": [
+      {
+        "text": "buenos días",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6a150d7a-9a94-4309-95e8-58a7abf3c5f2",
+    "data": [
+      {
+        "text": "buenas tardes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a647f22e-796a-4d64-bd3b-f9ed54de3d21",
+    "data": [
+      {
+        "text": "hey",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d2d0bc47-b691-414c-8eb0-26465dda69ab",
+    "data": [
+      {
+        "text": "hola AuraFit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "11b0c0eb-566b-4011-8cea-e9f4fa5cd0f3",
+    "data": [
+      {
+        "text": "quiero empezar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6ba5354c-b2e0-4b7e-a797-558616c8584d",
+    "data": [
+      {
+        "text": "abre el asistente",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "86fe68f7-79ab-4bce-b404-8c66ca1b3c39",
+    "data": [
+      {
+        "text": "qué tal",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a8056c44-3d91-4db2-8fe7-b4023cf38e21",
+    "data": [
+      {
+        "text": "hola, necesito ayuda",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

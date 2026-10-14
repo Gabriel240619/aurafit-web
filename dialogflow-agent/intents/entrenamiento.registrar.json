@@ -1,0 +1,73 @@
+{
+  "id": "473049a3-4b98-4e26-8f9e-a27469608eb4",
+  "name": "entrenamiento.registrar",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "entrenamiento.registrar",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "bbf982fc-6975-4302-82b7-ba84b31ee9aa",
+          "name": "tipo_entrenamiento",
+          "required": true,
+          "dataType": "@tipo_entrenamiento",
+          "value": "$tipo_entrenamiento",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Qué tipo de entrenamiento has realizado?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Qué has entrenado: tren superior, tren inferior, cuerpo completo o cardio?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "ac81eca7-69ac-4681-ba92-c20725a774dc",
+          "name": "duracion",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$duracion",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "No he podido completar esta operación en este momento. Inténtalo de nuevo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

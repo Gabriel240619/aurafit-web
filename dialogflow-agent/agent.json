@@ -1,0 +1,35 @@
+{
+  "description": "AuraFit: asistente de entrenamiento personal y seguimiento básico de alimentación.",
+  "language": "es",
+  "shortDescription": "Entrenamiento y alimentación",
+  "examples": "",
+  "linkToDocs": "",
+  "displayName": "AuraFit",
+  "disableInteractionLogs": false,
+  "disableStackdriverLogs": true,
+  "defaultTimezone": "Europe/Madrid",
+  "webhook": {
+    "url": "",
+    "username": "",
+    "headers": {},
+    "available": false,
+    "useForDomains": false,
+    "cloudFunctionsEnabled": false,
+    "cloudFunctionsInitialized": false
+  },
+  "isPrivate": true,
+  "mlMinConfidence": 0.3,
+  "supportedLanguages": [
+    "en"
+  ],
+  "enableOnePlatformApi": true,
+  "onePlatformApiVersion": "v2",
+  "secondaryKey": "5aa9e30e00a34f1f8aa39a4658da046e",
+  "analyzeQueryTextSentiment": false,
+  "enabledKnowledgeBaseNames": [],
+  "knowledgeServiceConfidenceAdjustment": -0.4,
+  "dialogBuilderMode": false,
+  "baseActionPackagesUrl": "",
+  "enableSpellCorrection": false,
+  "timeZone": "Europe/Madrid"
+}

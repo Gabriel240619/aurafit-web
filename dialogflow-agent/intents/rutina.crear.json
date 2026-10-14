@@ -1,0 +1,111 @@
+{
+  "id": "51238735-da74-44a1-9939-01794076f8e7",
+  "name": "rutina.crear",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "rutina.crear",
+      "affectedContexts": [
+        {
+          "name": "rutina_actual",
+          "lifespan": 20,
+          "parameters": {}
+        }
+      ],
+      "parameters": [
+        {
+          "id": "e718a53d-34b3-4c03-b24c-54760f2e424b",
+          "name": "objetivo",
+          "required": true,
+          "dataType": "@objetivo_fitness",
+          "value": "$objetivo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuál es tu objetivo: ganar músculo, perder grasa o mantenerte?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Qué objetivo de entrenamiento quieres conseguir?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "0512b3e3-b882-4a45-afe0-081f1385c728",
+          "name": "nivel",
+          "required": true,
+          "dataType": "@nivel_fitness",
+          "value": "$nivel",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuál es tu nivel: principiante, intermedio o avanzado?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Qué nivel de experiencia tienes entrenando?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6e6427f1-1990-4798-965d-510d5a30b715",
+          "name": "dias",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$dias",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuántos días a la semana puedes entrenar?"
+            },
+            {
+              "lang": "es",
+              "value": "Indícame cuántos días por semana quieres entrenar."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "No he podido completar esta operación en este momento. Inténtalo de nuevo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

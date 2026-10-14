@@ -1,0 +1,90 @@
+{
+  "id": "b027e063-7a29-4d17-90b6-3f13b3d1111b",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Hola, soy AuraFit, tu asistente para organizar entrenamientos y llevar un seguimiento básico de alimentación. ¿Qué quieres hacer hoy?",
+            "Bienvenido a AuraFit. Puedo ayudarte a crear una rutina, registrar entrenamientos o comidas y revisar tu progreso.",
+            "¡Hola! Con AuraFit puedes planificar tu rutina, apuntar lo que entrenas y registrar tu alimentación diaria.",
+            "Hola. ¿Empezamos con una rutina, con un registro de entrenamiento o con tu alimentación?",
+            "Bienvenido. Dime qué necesitas y te guiaré paso a paso: rutina, entrenamiento, nutrición o progreso."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "text": "¿Por dónde quieres empezar?",
+                  "options": [
+                    {
+                      "text": "Crear rutina"
+                    },
+                    {
+                      "text": "Registrar entrenamiento"
+                    },
+                    {
+                      "text": "Registrar comida"
+                    },
+                    {
+                      "text": "Ver progreso"
+                    },
+                    {
+                      "text": "¿Qué puedes hacer?"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hi! How are you doing?",
+            "Hello! How can I help you?",
+            "Good day! What can I do for you today?",
+            "Greetings! How can I assist?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

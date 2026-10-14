@@ -1,0 +1,158 @@
+[
+  {
+    "id": "e766d203-df3e-4ac0-abd0-8434876fd634",
+    "data": [
+      {
+        "text": "ayuda",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "dd7381e0-a29c-4b0a-8e5f-537803849268",
+    "data": [
+      {
+        "text": "qué puedes hacer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "11c3f25c-d266-4334-bfa1-ae081cc9a2f7",
+    "data": [
+      {
+        "text": "en qué me puedes ayudar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2da4dd53-66ce-4215-9e95-aa7e40d2a2b9",
+    "data": [
+      {
+        "text": "muéstrame tus funciones",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e0c8c773-e536-42ad-b28a-72d3f45e523d",
+    "data": [
+      {
+        "text": "qué opciones tengo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8e5a790f-c7e0-41fc-98da-faf1f43073f3",
+    "data": [
+      {
+        "text": "qué puedo preguntarte",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "51239af2-365a-414b-93df-10cb0c24a1ab",
+    "data": [
+      {
+        "text": "necesito ayuda",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a2679967-b21b-4d05-afac-252ac2b5269a",
+    "data": [
+      {
+        "text": "cómo funciona AuraFit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3a71df7f-4302-42fc-8534-80f90c246505",
+    "data": [
+      {
+        "text": "qué servicios tienes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ffdd4e4d-ae64-428f-be40-022bdc004c52",
+    "data": [
+      {
+        "text": "dime qué sabes hacer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a367535a-4e51-4d8c-a996-5ad80cb5ef1d",
+    "data": [
+      {
+        "text": "quiero ver el menú",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "91f4612b-b21a-46cd-a3c0-50cd640c509c",
+    "data": [
+      {
+        "text": "opciones",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

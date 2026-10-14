@@ -1,0 +1,39 @@
+{
+  "id": "6068604f-8559-4c99-abf8-4e2be8864984",
+  "name": "aura.despedida",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "aura.despedida",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Hasta luego. Cuando vuelvas, puedes seguir registrando tu entrenamiento, alimentación o consultar tu progreso.",
+            "Nos vemos. Mantén la constancia y vuelve cuando quieras revisar o actualizar tu seguimiento.",
+            "Hasta la próxima. AuraFit estará aquí cuando quieras continuar con tu rutina o tus registros.",
+            "Perfecto, damos por terminada la sesión. Que tengas un buen entrenamiento y una buena recuperación.",
+            "Adiós. Cuando necesites planificar, registrar o revisar tu actividad, puedes volver a empezar desde el menú principal."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

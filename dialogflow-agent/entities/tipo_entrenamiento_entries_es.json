@@ -1,0 +1,85 @@
+[
+  {
+    "value": "tren_superior",
+    "synonyms": [
+      "tren_superior",
+      "tren superior",
+      "torso",
+      "upper body",
+      "press banca",
+      "press inclinado",
+      "press militar",
+      "remo",
+      "dominadas",
+      "jalón al pecho",
+      "fondos",
+      "flexiones",
+      "curl de bíceps",
+      "curl martillo",
+      "extensiones de tríceps",
+      "elevaciones laterales",
+      "face pull"
+    ]
+  },
+  {
+    "value": "tren_inferior",
+    "synonyms": [
+      "tren_inferior",
+      "tren inferior",
+      "piernas",
+      "lower body",
+      "sentadillas",
+      "sentadilla goblet",
+      "prensa de piernas",
+      "zancadas",
+      "peso muerto",
+      "peso muerto rumano",
+      "hip thrust",
+      "puente de glúteos",
+      "extensiones de cuádriceps",
+      "curl femoral",
+      "gemelos",
+      "abductores",
+      "aductores",
+      "step ups"
+    ]
+  },
+  {
+    "value": "cuerpo_completo",
+    "synonyms": [
+      "cuerpo_completo",
+      "cuerpo completo",
+      "full body",
+      "cuerpo entero",
+      "burpees",
+      "thrusters",
+      "sentadilla con press",
+      "clean and press",
+      "kettlebell swing",
+      "farmer walk",
+      "circuito full body"
+    ]
+  },
+  {
+    "value": "cardio",
+    "synonyms": [
+      "cardio",
+      "cardiovascular",
+      "aeróbico",
+      "correr",
+      "trotar",
+      "cinta",
+      "bicicleta",
+      "spinning",
+      "elíptica",
+      "remo cardiovascular",
+      "saltar a la comba",
+      "caminar",
+      "escaleras",
+      "stairmaster",
+      "HIIT",
+      "intervalos",
+      "sprints"
+    ]
+  }
+]

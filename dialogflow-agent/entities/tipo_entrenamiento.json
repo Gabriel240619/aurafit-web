@@ -1,0 +1,9 @@
+{
+  "id": "575a9eeb-70aa-4275-a61e-0fe041380e39",
+  "name": "tipo_entrenamiento",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

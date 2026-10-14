@@ -1,0 +1,99 @@
+{
+  "id": "f549ddc0-8262-4cd5-afb5-2c6b135c3882",
+  "name": "aura.ayuda",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "aura.ayuda",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Puedo ayudarte a planificar y registrar tu actividad: crear o consultar rutinas, anotar entrenamientos y comidas, consultar calorías y revisar tu progreso.",
+            "Estas son mis funciones principales. Elige una opción y te llevaré directamente al flujo correspondiente.",
+            "AuraFit está pensado para guiarte en entrenamiento y seguimiento básico de alimentación. Puedes empezar desde cualquiera de estas acciones.",
+            "Dime qué necesitas: diseñar una rutina, registrar actividad, registrar alimentación, consultar calorías o revisar tu resumen diario."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "description",
+                  "title": "Funciones de AuraFit",
+                  "text": [
+                    "• Crear y consultar una rutina según objetivo, nivel y días disponibles.",
+                    "• Registrar entrenamientos realizados.",
+                    "• Registrar desayuno, almuerzo, comida, merienda o cena.",
+                    "• Consultar calorías e información nutricional.",
+                    "• Revisar alimentación y progreso de la sesión actual."
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "text": "Elige una función:",
+                  "options": [
+                    {
+                      "text": "Crear rutina"
+                    },
+                    {
+                      "text": "Ver rutina"
+                    },
+                    {
+                      "text": "Registrar entrenamiento"
+                    },
+                    {
+                      "text": "Registrar comida"
+                    },
+                    {
+                      "text": "Consultar calorías"
+                    },
+                    {
+                      "text": "Ver progreso"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

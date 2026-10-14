@@ -1,0 +1,297 @@
+[
+  {
+    "id": "1f51546b-6441-4faa-a3e9-f4d3852b0022",
+    "data": [
+      {
+        "text": "quiero registrar una comida",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a8446a6e-fa70-4532-a556-d8dcb8972322",
+    "data": [
+      {
+        "text": "he comido ",
+        "userDefined": false
+      },
+      {
+        "text": "arroz con pollo",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e16c24ed-921b-4f81-837c-532c19227350",
+    "data": [
+      {
+        "text": "en la ",
+        "userDefined": false
+      },
+      {
+        "text": "cena",
+        "meta": "@tipo_comida",
+        "alias": "tipo_comida",
+        "userDefined": true
+      },
+      {
+        "text": " he tomado ",
+        "userDefined": false
+      },
+      {
+        "text": "salmón con verduras",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7cf9fa00-ca65-4c62-b6dc-b88622923bfb",
+    "data": [
+      {
+        "text": "para ",
+        "userDefined": false
+      },
+      {
+        "text": "desayuno",
+        "meta": "@tipo_comida",
+        "alias": "tipo_comida",
+        "userDefined": true
+      },
+      {
+        "text": " he tomado ",
+        "userDefined": false
+      },
+      {
+        "text": "avena con plátano",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "bd5dd260-5eb2-4065-994f-d9d1a601b931",
+    "data": [
+      {
+        "text": "registra ",
+        "userDefined": false
+      },
+      {
+        "text": "yogur con fruta",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      },
+      {
+        "text": " como ",
+        "userDefined": false
+      },
+      {
+        "text": "merienda",
+        "meta": "@tipo_comida",
+        "alias": "tipo_comida",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6f20a4ea-b384-4caf-8e89-bebdc92bf61a",
+    "data": [
+      {
+        "text": "mi ",
+        "userDefined": false
+      },
+      {
+        "text": "almuerzo",
+        "meta": "@tipo_comida",
+        "alias": "tipo_comida",
+        "userDefined": true
+      },
+      {
+        "text": " ha sido ",
+        "userDefined": false
+      },
+      {
+        "text": "un bocadillo",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3eb3f940-7503-45d7-802a-0e32272aa00e",
+    "data": [
+      {
+        "text": "en la ",
+        "userDefined": false
+      },
+      {
+        "text": "comida",
+        "meta": "@tipo_comida",
+        "alias": "tipo_comida",
+        "userDefined": true
+      },
+      {
+        "text": " comí ",
+        "userDefined": false
+      },
+      {
+        "text": "lentejas",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0618ad67-b535-4ee0-a47e-a85cafec9cbf",
+    "data": [
+      {
+        "text": "apunta ",
+        "userDefined": false
+      },
+      {
+        "text": "tostadas con huevo",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      },
+      {
+        "text": " en el ",
+        "userDefined": false
+      },
+      {
+        "text": "desayuno",
+        "meta": "@tipo_comida",
+        "alias": "tipo_comida",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f14b607e-09f9-4127-a5aa-5aec2f73ae19",
+    "data": [
+      {
+        "text": "he cenado ",
+        "userDefined": false
+      },
+      {
+        "text": "pasta",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "492ffb68-a49e-4278-9401-9d326ad34d5c",
+    "data": [
+      {
+        "text": "registra mi ",
+        "userDefined": false
+      },
+      {
+        "text": "almuerzo",
+        "meta": "@tipo_comida",
+        "alias": "tipo_comida",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8ad4af08-d2f6-4766-90a7-dd3fb58d85be",
+    "data": [
+      {
+        "text": "quiero apuntar ",
+        "userDefined": false
+      },
+      {
+        "text": "una ensalada",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8073d227-ba1a-4a67-979c-29a5b07f8825",
+    "data": [
+      {
+        "text": "he merendado ",
+        "userDefined": false
+      },
+      {
+        "text": "fruta y frutos secos",
+        "meta": "@sys.any",
+        "alias": "alimento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "058bb158-dc4a-466d-8c16-576b4b92682b",
+    "data": [
+      {
+        "text": "Registrar comida",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

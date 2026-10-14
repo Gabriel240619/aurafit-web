@@ -1,0 +1,132 @@
+[
+  {
+    "id": "9944cbd2-cdfa-416d-bf9f-dbe2ef6b69f3",
+    "data": [
+      {
+        "text": "resumen de alimentación",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "bd339e1a-ea13-478c-a496-4fd4d8e416f0",
+    "data": [
+      {
+        "text": "qué he comido hoy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "873eaf6c-a1b4-44b0-8b60-1b0022ff597f",
+    "data": [
+      {
+        "text": "muéstrame mis comidas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d2fccb74-1d83-40e2-a5d2-3058d3294912",
+    "data": [
+      {
+        "text": "ver alimentación",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2f36de61-a557-49de-a194-66fec01bad84",
+    "data": [
+      {
+        "text": "consultar comidas registradas",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c544a315-1842-4bc6-b5f6-c5671de65b54",
+    "data": [
+      {
+        "text": "qué tengo registrado de comida",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "40cc9726-ab09-4f76-975e-6ae2e91bf3a2",
+    "data": [
+      {
+        "text": "resumen nutricional",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "42456c22-25cf-426b-b651-c87a9e38bb4d",
+    "data": [
+      {
+        "text": "dime lo que he registrado hoy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1fa34a81-e62a-4f64-8596-98268b62eab1",
+    "data": [
+      {
+        "text": "ver registro de alimentación",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "84a315fa-fb08-463e-9f57-689dfd9c2ae3",
+    "data": [
+      {
+        "text": "qué he apuntado de comida",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "id": "c1273614-8f82-4aed-99e2-6230cf288780",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "No he identificado bien tu petición. Puedes pedirme que cree una rutina, registre un entrenamiento o comida, o muestre tu progreso.",
+            "No estoy seguro de haber entendido. Prueba a indicarme una acción concreta, por ejemplo «crear rutina» o «registrar comida».",
+            "Esa petición se me ha escapado. Puedo ayudarte con entrenamiento, alimentación, calorías y seguimiento diario.",
+            "No he podido relacionar tu mensaje con una función de AuraFit. Elige una de las opciones rápidas y continuamos.",
+            "No te he entendido con suficiente precisión. Puedes reformularlo o usar uno de estos accesos rápidos."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "text": "Puedes probar con:",
+                  "options": [
+                    {
+                      "text": "Crear rutina"
+                    },
+                    {
+                      "text": "Registrar entrenamiento"
+                    },
+                    {
+                      "text": "Registrar comida"
+                    },
+                    {
+                      "text": "Consultar calorías"
+                    },
+                    {
+                      "text": "Ver progreso"
+                    },
+                    {
+                      "text": "Ayuda"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "I didn\u0027t get that. Can you say it again?",
+            "I missed what you said. What was that?",
+            "Sorry, could you say that again?",
+            "Sorry, can you say that again?",
+            "Can you say that again?",
+            "Sorry, I didn\u0027t get that. Can you rephrase?",
+            "Sorry, what was that?",
+            "One more time?",
+            "What was that?",
+            "Say that one more time?",
+            "I didn\u0027t get that. Can you repeat?",
+            "I missed that, say that again?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

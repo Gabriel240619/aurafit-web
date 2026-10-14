@@ -1,0 +1,40 @@
+[
+  {
+    "value": "ganar_musculo",
+    "synonyms": [
+      "ganar_musculo",
+      "ganar músculo",
+      "ganar masa muscular",
+      "hipertrofia",
+      "aumentar volumen",
+      "muscularme",
+      "ganar masa",
+      "crecer muscularmente"
+    ]
+  },
+  {
+    "value": "perder_grasa",
+    "synonyms": [
+      "perder_grasa",
+      "perder grasa",
+      "adelgazar",
+      "perder peso",
+      "definir",
+      "quemar grasa",
+      "bajar de peso",
+      "reducir grasa"
+    ]
+  },
+  {
+    "value": "mantener",
+    "synonyms": [
+      "mantener",
+      "mantenerme activo",
+      "mantenerme en forma",
+      "mantener peso",
+      "mejorar mi forma física",
+      "estar en forma",
+      "mantener condición física"
+    ]
+  }
+]

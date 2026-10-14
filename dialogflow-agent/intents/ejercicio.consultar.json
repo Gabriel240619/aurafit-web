@@ -1,0 +1,55 @@
+{
+  "id": "1e4629ad-8363-4bd9-822d-fce0ee610ead",
+  "name": "ejercicio.consultar",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ejercicio.consultar",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "2d3c2045-a522-4d6e-a602-3b151c91095b",
+          "name": "ejercicio",
+          "required": true,
+          "dataType": "@ejercicio",
+          "value": "$ejercicio",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Qué ejercicio quieres consultar?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "No he podido completar esta operación en este momento. Inténtalo de nuevo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

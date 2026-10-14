@@ -1,74 +1,131 @@
-# AuraFit Web
+# AuraFit
 
-SPA de presentación e integración del asistente de fitness y nutrición **AuraFit**, construida con React, Vite y Dialogflow Messenger.
+AuraFit es un chatbot académico de fitness y seguimiento básico de alimentación construido con React, Vite, Dialogflow ES, Dialogflow Messenger y un webhook Node.js.
 
-## Puesta en marcha
+## Instalación y arranque
+
+Instala exactamente las dependencias registradas:
 
 ```bash
-npm install
+npm ci
+```
+
+Arranca el frontend:
+
+```bash
 npm run dev
 ```
 
-Para generar la versión de producción:
-
-```bash
-npm run build
-```
-
-## Webhook de Dialogflow
-
-El backend del asistente se ejecuta en otro terminal con:
+En otra terminal, arranca el webhook:
 
 ```bash
 npm run dev:webhook
 ```
 
-El endpoint local es `POST http://localhost:3001/webhook`. Dialogflow ES exige
-una URL HTTPS pública, por lo que para conectarlo debes desplegar este servidor
-o exponer el puerto `3001` mediante un túnel HTTPS y configurar la URL resultante
-en **Fulfillment > Webhook** del agente.
+Por defecto, la web estará en `http://localhost:5173` y el webhook en `http://localhost:3001`.
 
-El webhook utiliza `queryResult.action` y admite estas acciones:
+## Variables de entorno
 
-- `rutina.crear` con `objetivo`, `nivel` y `dias`;
-- `rutina.consultar` para recuperar la última rutina de la misma sesión;
-- `ejercicio.consultar` con el parámetro `ejercicio`.
+Copia `.env.example` como `.env` y completa los valores necesarios:
 
-Las rutinas se guardan en memoria por el identificador completo de sesión. Al
-reiniciar el servidor se borran; el repositorio está desacoplado para poder
-sustituirlo más adelante por almacenamiento persistente.
+```env
+VITE_DIALOGFLOW_AGENT_ID=REEMPLAZAR_AGENT_ID
+USDA_FDC_API_KEY=REEMPLAZAR_API_KEY
+USDA_FDC_BASE_URL=https://api.nal.usda.gov/fdc/v1
+PORT=3001
+```
 
-Para ejecutar las pruebas del webhook:
+- `VITE_DIALOGFLOW_AGENT_ID`: ID del agente de Dialogflow ES usado por el frontend.
+- `USDA_FDC_API_KEY`: clave de USDA FoodData Central. Debe obtenerse en su portal y no se versiona.
+- `USDA_FDC_BASE_URL`: URL base de la API nutricional.
+- `PORT`: puerto del webhook Node.js.
+
+Vite carga la configuración del frontend. El webhook carga explícitamente `.env` mediante `dotenv` y usa el almacén de certificados del sistema para las conexiones HTTPS salientes. Los archivos `.env` y `.env.local` están ignorados por Git.
+
+## Webhook de Dialogflow
+
+El servidor ofrece:
+
+- `POST /webhook`: fulfillment de Dialogflow ES.
+- `GET /health`: comprobación de disponibilidad, con respuesta `{"status":"ok","service":"aurafit-webhook"}`.
+
+Acciones gestionadas:
+
+- `rutina.crear`
+- `rutina.consultar`
+- `ejercicio.consultar`
+- `entrenamiento.registrar`
+- `nutricion.registrar`
+- `nutricion.resumen`
+- `nutricion.consultar_calorias`
+- `progreso.resumen`
+
+El estado se guarda en memoria usando el valor completo de la sesión de Dialogflow. Rutinas, entrenamientos y comidas quedan aislados por sesión, pero se pierden al reiniciar el webhook. Los resúmenes diarios usan la zona `Europe/Madrid`.
+
+Dialogflow exige un endpoint HTTPS público. Para desarrollo puedes exponer el puerto `3001` con ngrok:
+
+```bash
+ngrok http 3001
+```
+
+Configura en **Fulfillment > Webhook** la URL pública seguida de `/webhook`. Una URL gratuita de ngrok es temporal y no debe considerarse una dirección permanente de entrega.
+
+## Agente de Dialogflow
+
+El agente actualizado y listo para importar está en:
+
+```text
+dialogflow/AuraFit-actualizado.zip
+```
+
+Su contenido fuente se conserva en `dialogflow-agent/`. El export tiene activado el webhook en todas las acciones dinámicas, entidades alineadas con el backend y frases adicionales para consultar ejercicios.
+
+Para regenerar el ZIP en Windows usa el script incluido. Este normaliza las rutas internas con `/`, como exige Dialogflow:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\build-dialogflow-zip.ps1
+```
+
+No uses `Compress-Archive` directamente para este export: puede guardar las rutas internas con `\` y Dialogflow no reconocerá las carpetas `intents/` y `entities/`.
+
+El ZIP no contiene una URL de webhook para evitar conservar un túnel de ngrok caducado. Después de importarlo:
+
+1. abre **Fulfillment**;
+2. activa el webhook;
+3. introduce tu URL HTTPS pública terminada en `/webhook`;
+4. pulsa **Save**;
+5. revisa **Validation** y prueba las rich responses en Dialogflow Messenger.
+
+## Información nutricional
+
+`nutricion.consultar_calorias` utiliza la API real de USDA FoodData Central. El servicio:
+
+- traduce un conjunto pequeño y explícito de aliases frecuentes del español al inglés;
+- prioriza alimentos genéricos frente a productos de marca;
+- extrae energía, proteína, carbohidratos, grasa y fibra;
+- aplica un timeout de siete segundos;
+- responde de forma conversacional si falta la clave, no hay resultados o la API falla.
+
+Los resultados son valores orientativos, normalmente expresados por 100 g, y pueden variar según el producto y la preparación.
+
+## Pruebas y compilación
 
 ```bash
 npm test
+npm run build
 ```
 
-## Conectar Dialogflow
+Las pruebas nutricionales usan un cliente inyectado y respuestas simuladas; no consumen la API real ni requieren una clave para ejecutarse.
 
-1. Copia `.env.example` como `.env` (si todavía no existe).
-2. Sustituye `REEMPLAZAR_AGENT_ID` por el identificador real de tu agente de Dialogflow ES:
-
-```env
-VITE_DIALOGFLOW_AGENT_ID=tu-agent-id
-```
-
-3. Reinicia el servidor de desarrollo.
-
-Vite carga automáticamente el archivo `.env`. Este archivo está incluido en
-`.gitignore` para evitar publicar la configuración real del agente.
-
-Toda la configuración del Messenger (idioma, intent inicial y título) está centralizada en `src/config/dialogflow.js`. Si no se configura un ID, la interfaz muestra un estado de preparación en lugar de intentar conectar con un agente inexistente.
-
-## Estructura
+## Estructura principal
 
 ```text
-src/
-├── assets/        Isotipo SVG sustituible
-├── components/    Paneles y piezas de interfaz
-├── config/        Configuración de Dialogflow
-└── styles/        Sistema visual y responsive
+src/                         Frontend React y Dialogflow Messenger
+server/data/                 Catálogo de ejercicios y plantillas de rutina
+server/repositories/         Estado en memoria por sesión
+server/services/             Rutinas, actividad y cliente USDA
+server/webhook/              Router y respuestas de Dialogflow Messenger
+test/                        Pruebas automatizadas
+dialogflow-agent/            Fuente del export actualizado de Dialogflow ES
+dialogflow/                  ZIP importable del agente
 ```
-
-La lógica del webhook se encuentra en `server/`, separada en datos, servicios,
-repositorio y adaptador HTTP.

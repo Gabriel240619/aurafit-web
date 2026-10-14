@@ -1,0 +1,59 @@
+{
+  "id": "e0d9aae2-5a33-4a25-b31c-b2815002dd1c",
+  "name": "nutricion.consultar_calorias",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "nutricion.consultar_calorias",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "54eba7e0-b0ef-4929-bbda-57088ce67784",
+          "name": "alimento",
+          "required": true,
+          "dataType": "@sys.any",
+          "value": "$alimento",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿De qué alimento quieres consultar las calorías?"
+            },
+            {
+              "lang": "es",
+              "value": "Indícame el alimento que quieres consultar."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "No he podido completar esta operación en este momento. Inténtalo de nuevo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

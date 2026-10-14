@@ -1,0 +1,273 @@
+[
+  {
+    "id": "6af07c7b-dfc2-4e03-863d-9fd638379acb",
+    "data": [
+      {
+        "text": "quiero registrar un entrenamiento",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e776cb80-f1c9-469d-b8f1-e2d04ca6928d",
+    "data": [
+      {
+        "text": "he hecho ",
+        "userDefined": false
+      },
+      {
+        "text": "cardio",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e14acc49-575f-416b-9231-21a5ff5b3044",
+    "data": [
+      {
+        "text": "hoy entrené ",
+        "userDefined": false
+      },
+      {
+        "text": "tren superior",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "89d78476-0442-4b3b-8e39-982df840f753",
+    "data": [
+      {
+        "text": "he hecho ",
+        "userDefined": false
+      },
+      {
+        "text": "sentadillas",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "47d3df68-5658-4120-b0da-3626c3fa7aa5",
+    "data": [
+      {
+        "text": "registrar ",
+        "userDefined": false
+      },
+      {
+        "text": "tren inferior",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "26f2b8fc-b9c1-4c25-b199-705059016f01",
+    "data": [
+      {
+        "text": "entrené ",
+        "userDefined": false
+      },
+      {
+        "text": "cuerpo completo",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      },
+      {
+        "text": " durante ",
+        "userDefined": false
+      },
+      {
+        "text": "45",
+        "meta": "@sys.number",
+        "alias": "duracion",
+        "userDefined": true
+      },
+      {
+        "text": " minutos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "301507d1-1bb9-4973-bc65-8a011a83d9f0",
+    "data": [
+      {
+        "text": "hice ",
+        "userDefined": false
+      },
+      {
+        "text": "cardio",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "30",
+        "meta": "@sys.number",
+        "alias": "duracion",
+        "userDefined": true
+      },
+      {
+        "text": " minutos",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0217e301-d3be-461f-87e5-1a13c3de3836",
+    "data": [
+      {
+        "text": "apunta un entrenamiento de ",
+        "userDefined": false
+      },
+      {
+        "text": "press banca",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "44820a28-f3b4-4d22-8b90-3b2725325c1b",
+    "data": [
+      {
+        "text": "registra ",
+        "userDefined": false
+      },
+      {
+        "text": "peso muerto rumano",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c64a9283-df9e-4d0f-9b79-48e10845775e",
+    "data": [
+      {
+        "text": "acabo de hacer ",
+        "userDefined": false
+      },
+      {
+        "text": "HIIT",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c68c63c9-c82a-4440-84a8-73090c24cb49",
+    "data": [
+      {
+        "text": "entrenamiento de ",
+        "userDefined": false
+      },
+      {
+        "text": "piernas",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      },
+      {
+        "text": " completado",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "0e15b954-e8c0-4491-9f7a-0356160e10d5",
+    "data": [
+      {
+        "text": "hoy hice ",
+        "userDefined": false
+      },
+      {
+        "text": "dominadas",
+        "meta": "@tipo_entrenamiento",
+        "alias": "tipo_entrenamiento",
+        "userDefined": true
+      },
+      {
+        "text": " y quiero registrarlo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a8c5597c-40a8-4e64-a71b-c3adcb12106d",
+    "data": [
+      {
+        "text": "Registrar entrenamiento",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

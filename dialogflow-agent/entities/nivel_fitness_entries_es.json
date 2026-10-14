@@ -1,0 +1,36 @@
+[
+  {
+    "value": "principiante",
+    "synonyms": [
+      "principiante",
+      "novato",
+      "nivel básico",
+      "estoy empezando",
+      "sin experiencia",
+      "inicio",
+      "básico"
+    ]
+  },
+  {
+    "value": "intermedio",
+    "synonyms": [
+      "intermedio",
+      "nivel medio",
+      "tengo experiencia",
+      "entreno habitualmente",
+      "experiencia media",
+      "medio"
+    ]
+  },
+  {
+    "value": "avanzado",
+    "synonyms": [
+      "avanzado",
+      "experto",
+      "nivel alto",
+      "llevo años entrenando",
+      "mucha experiencia",
+      "alto"
+    ]
+  }
+]

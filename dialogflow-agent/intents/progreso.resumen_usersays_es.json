@@ -1,0 +1,158 @@
+[
+  {
+    "id": "ea197271-b581-4457-a8dc-9c5724218318",
+    "data": [
+      {
+        "text": "ver progreso",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "aea699a4-087a-47c4-8e1d-b0283524eae1",
+    "data": [
+      {
+        "text": "cómo voy hoy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1226bb2c-be16-4b53-96a5-61bbc364a2d8",
+    "data": [
+      {
+        "text": "resumen diario",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "fdb74338-3b99-48c5-b090-d4c8e870ee67",
+    "data": [
+      {
+        "text": "muéstrame mi progreso",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "c0268b62-98ee-4464-beda-fac3f1c1a45a",
+    "data": [
+      {
+        "text": "qué he hecho hoy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6a114d24-17ac-4705-a555-afe9ffbf12b7",
+    "data": [
+      {
+        "text": "resumen de actividad",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "053d4e13-0749-43ce-bfd4-454c83c9c3c1",
+    "data": [
+      {
+        "text": "estado de hoy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "15840b6c-e933-45b7-a3a8-6d842ac51003",
+    "data": [
+      {
+        "text": "consultar progreso",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "28823f33-60eb-49d6-80e1-37cab0060637",
+    "data": [
+      {
+        "text": "dame un resumen del día",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "fff0433f-a3ea-40e6-a6ad-5e6c8bdb5e68",
+    "data": [
+      {
+        "text": "actividad y alimentación de hoy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d5a6e69e-1241-42f3-8ad0-e6b0feb93e00",
+    "data": [
+      {
+        "text": "mi seguimiento diario",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "44342bd7-b84a-4bc5-b551-bec38eeb9b88",
+    "data": [
+      {
+        "text": "quiero ver el resumen",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

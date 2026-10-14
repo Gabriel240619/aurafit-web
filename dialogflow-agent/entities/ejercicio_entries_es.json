@@ -1,0 +1,79 @@
+[
+  {
+    "value": "sentadilla",
+    "synonyms": [
+      "sentadilla",
+      "sentadillas",
+      "squat"
+    ]
+  },
+  {
+    "value": "press_banca",
+    "synonyms": [
+      "press_banca",
+      "press banca",
+      "press de banca",
+      "bench press"
+    ]
+  },
+  {
+    "value": "press_militar",
+    "synonyms": [
+      "press_militar",
+      "press militar",
+      "press de hombros",
+      "overhead press"
+    ]
+  },
+  {
+    "value": "dominadas",
+    "synonyms": [
+      "dominadas",
+      "dominada",
+      "pull up",
+      "pull ups"
+    ]
+  },
+  {
+    "value": "remo",
+    "synonyms": [
+      "remo",
+      "remo con barra",
+      "barbell row"
+    ]
+  },
+  {
+    "value": "peso_muerto",
+    "synonyms": [
+      "peso_muerto",
+      "peso muerto",
+      "deadlift"
+    ]
+  },
+  {
+    "value": "peso_muerto_rumano",
+    "synonyms": [
+      "peso_muerto_rumano",
+      "peso muerto rumano",
+      "romanian deadlift",
+      "RDL"
+    ]
+  },
+  {
+    "value": "zancadas",
+    "synonyms": [
+      "zancadas",
+      "zancada",
+      "lunges",
+      "lunge"
+    ]
+  },
+  {
+    "value": "plancha",
+    "synonyms": [
+      "plancha",
+      "plancha abdominal",
+      "plank"
+    ]
+  }
+]

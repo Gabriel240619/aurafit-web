@@ -1,0 +1,82 @@
+{
+  "id": "c6e39fdc-f9e7-42e5-a8e1-171b65cd6e64",
+  "name": "nutricion.registrar",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "nutricion.registrar",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d245a17b-497e-491d-bb82-1821ad5a6580",
+          "name": "tipo_comida",
+          "required": true,
+          "dataType": "@tipo_comida",
+          "value": "$tipo_comida",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿En qué comida lo has tomado: desayuno, almuerzo, comida, merienda o cena?"
+            },
+            {
+              "lang": "es",
+              "value": "¿A qué tipo de comida corresponde?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "fafcf6e4-2329-46d8-901a-c4912505c912",
+          "name": "alimento",
+          "required": true,
+          "dataType": "@sys.any",
+          "value": "$alimento",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Qué alimento o comida quieres registrar?"
+            },
+            {
+              "lang": "es",
+              "value": "¿Qué has comido?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "No he podido completar esta operación en este momento. Inténtalo de nuevo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
