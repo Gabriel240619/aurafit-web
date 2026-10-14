@@ -39,6 +39,7 @@ PORT=3001
 - `USDA_FDC_API_KEY`: clave de USDA FoodData Central. Debe obtenerse en su portal y no se versiona.
 - `USDA_FDC_BASE_URL`: URL base de la API nutricional.
 - `PORT`: puerto del webhook Node.js.
+- `PUBLIC_BASE_URL`: URL pública fija opcional para construir las URLs de imágenes. Con ngrok se detecta automáticamente desde la petición.
 
 Vite carga la configuración del frontend. El webhook carga explícitamente `.env` mediante `dotenv` y usa el almacén de certificados del sistema para las conexiones HTTPS salientes. Los archivos `.env` y `.env.local` están ignorados por Git.
 
@@ -48,6 +49,7 @@ El servidor ofrece:
 
 - `POST /webhook`: fulfillment de Dialogflow ES.
 - `GET /health`: comprobación de disponibilidad, con respuesta `{"status":"ok","service":"aurafit-webhook"}`.
+- `GET /assets/exercises/:archivo.jpg`: imágenes locales usadas en las fichas de ejercicios.
 
 Acciones gestionadas:
 

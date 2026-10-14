@@ -1,9 +1,11 @@
 import 'dotenv/config';
 import http from 'node:http';
+import { readFile } from 'node:fs/promises';
 import { handleDialogflowWebhook } from './webhook/dialogflowWebhook.js';
 
 const port = Number(process.env.PORT) || 3001;
 const maxBodySize = 1_000_000;
+const exerciseAssetsUrl = new URL('../public/assets/exercises/', import.meta.url);
 
 function sendJson(response, statusCode, payload) {
   response.writeHead(statusCode, {
@@ -15,8 +17,44 @@ function sendJson(response, statusCode, payload) {
   response.end(statusCode === 204 ? undefined : JSON.stringify(payload));
 }
 
-export const server = http.createServer((request, response) => {
+function publicBaseUrl(request) {
+  const configuredUrl = process.env.PUBLIC_BASE_URL?.trim();
+  if (configuredUrl) return configuredUrl.replace(/\/$/, '');
+  const forwardedProto = String(request.headers['x-forwarded-proto'] ?? '').split(',')[0].trim();
+  const protocol = forwardedProto === 'https' ? 'https' : request.socket.encrypted ? 'https' : 'http';
+  const forwardedHost = String(request.headers['x-forwarded-host'] ?? '').split(',')[0].trim();
+  const host = forwardedHost || request.headers.host || `localhost:${port}`;
+  return `${protocol}://${host}`;
+}
+
+async function sendExerciseAsset(request, response) {
+  const pathname = new URL(request.url, 'http://localhost').pathname;
+  const fileName = decodeURIComponent(pathname.slice('/assets/exercises/'.length));
+  if (!/^[a-z0-9-]+\.jpg$/.test(fileName)) {
+    sendJson(response, 404, { error: 'Imagen no encontrada.' });
+    return;
+  }
+  try {
+    const image = await readFile(new URL(fileName, exerciseAssetsUrl));
+    response.writeHead(200, {
+      'Content-Type': 'image/jpeg',
+      'Content-Length': image.length,
+      'Cache-Control': 'public, max-age=86400',
+      'Access-Control-Allow-Origin': '*',
+    });
+    response.end(image);
+  } catch (error) {
+    if (error?.code !== 'ENOENT') console.error('Error al servir una imagen:', error);
+    sendJson(response, 404, { error: 'Imagen no encontrada.' });
+  }
+}
+
+export const server = http.createServer(async (request, response) => {
   if (request.method === 'OPTIONS') return sendJson(response, 204, {});
+  if (request.method === 'GET' && request.url?.startsWith('/assets/exercises/')) {
+    await sendExerciseAsset(request, response);
+    return;
+  }
   if (request.method === 'GET' && request.url === '/health') {
     return sendJson(response, 200, { status: 'ok', service: 'aurafit-webhook' });
   }
@@ -37,7 +75,10 @@ export const server = http.createServer((request, response) => {
       return;
     }
     try {
-      const result = await handleDialogflowWebhook(JSON.parse(rawBody || '{}'));
+      const result = await handleDialogflowWebhook(
+        JSON.parse(rawBody || '{}'),
+        { publicBaseUrl: publicBaseUrl(request) },
+      );
       sendJson(response, 200, result);
     } catch (error) {
       console.error('Petición no válida:', error);

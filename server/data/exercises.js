@@ -12,7 +12,7 @@ export const exercises = [
       'Empuja el suelo para regresar a la posición inicial.',
     ],
     errores: ['Juntar las rodillas hacia dentro.', 'Redondear la espalda o perder el apoyo del pie.'],
-    imageUrl: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/sentadilla.jpg',
   },
   {
     id: 'press_banca',
@@ -27,7 +27,7 @@ export const exercises = [
       'Empuja de forma controlada sin despegar los hombros del banco.',
     ],
     errores: ['Abrir en exceso los codos.', 'Rebotar la barra contra el pecho.'],
-    imageUrl: 'https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/press-banca.jpg',
   },
   {
     id: 'press_militar',
@@ -42,7 +42,7 @@ export const exercises = [
       'Baja de forma controlada hasta la posición inicial.',
     ],
     errores: ['Inclinar demasiado el tronco hacia atrás.', 'Separar la carga de su trayectoria vertical.'],
-    imageUrl: 'https://images.unsplash.com/photo-1581009137042-c552e485697a?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/press-militar.jpg',
   },
   {
     id: 'dominadas',
@@ -57,7 +57,7 @@ export const exercises = [
       'Desciende con control hasta extender los brazos.',
     ],
     errores: ['Balancear el cuerpo para ganar impulso.', 'Encoger los hombros durante el tirón.'],
-    imageUrl: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a00?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/dominadas.jpg',
   },
   {
     id: 'peso_muerto',
@@ -72,7 +72,7 @@ export const exercises = [
       'Desciende llevando primero la cadera hacia atrás.',
     ],
     errores: ['Alejar la carga del cuerpo.', 'Redondear la zona lumbar.'],
-    imageUrl: 'https://images.unsplash.com/photo-1603287681836-b174ce5074c2?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/peso-muerto.jpg',
   },
   {
     id: 'peso_muerto_rumano',
@@ -87,7 +87,7 @@ export const exercises = [
       'Extiende la cadera al notar tensión en los isquiotibiales.',
     ],
     errores: ['Convertir el movimiento en una sentadilla.', 'Bajar más allá del rango que permite mantener la espalda neutra.'],
-    imageUrl: 'https://images.unsplash.com/photo-1603287681836-b174ce5074c2?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/peso-muerto-rumano.jpg',
   },
   {
     id: 'remo',
@@ -102,7 +102,7 @@ export const exercises = [
       'Desciende la carga de forma controlada.',
     ],
     errores: ['Usar impulso excesivo.', 'Perder la posición neutra de la espalda.'],
-    imageUrl: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/remo.jpg',
   },
   {
     id: 'zancadas',
@@ -117,7 +117,7 @@ export const exercises = [
       'Empuja con el pie delantero para regresar.',
     ],
     errores: ['Perder el equilibrio por una base demasiado estrecha.', 'Dejar que la rodilla delantera colapse hacia dentro.'],
-    imageUrl: 'https://images.unsplash.com/photo-1434682881908-b43d0467b798?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/zancadas.jpg',
   },
   {
     id: 'plancha',
@@ -132,6 +132,6 @@ export const exercises = [
       'Mantén la posición durante el tiempo indicado.',
     ],
     errores: ['Dejar caer la cadera.', 'Elevar demasiado los glúteos.'],
-    imageUrl: 'https://images.unsplash.com/photo-1566241142559-40e1dab266c6?auto=format&fit=crop&w=1200&q=80',
+    imagePath: '/assets/exercises/plancha.jpg',
   },
 ];

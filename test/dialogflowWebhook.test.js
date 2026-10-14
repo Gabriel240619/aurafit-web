@@ -19,7 +19,11 @@ function setup(nutritionResult = null) {
     },
   };
   const webhook = createDialogflowWebhook({
-    repository, nutritionClient, logger: silentLogger, now: () => fixedDate,
+    repository,
+    nutritionClient,
+    logger: silentLogger,
+    now: () => fixedDate,
+    publicBaseUrl: 'https://aurafit.test',
   });
   return { repository, webhook };
 }
@@ -69,6 +73,8 @@ describe('webhook de Dialogflow', () => {
       const response = await webhook(request('ejercicio.consultar', { ejercicio }));
       const blocks = response.fulfillmentMessages[0].payload.richContent[0];
       assert.ok(blocks.some((block) => block.type === 'description'), ejercicio);
+      const image = blocks.find((block) => block.type === 'image');
+      assert.match(image.rawUrl, /^https:\/\/aurafit\.test\/assets\/exercises\/.+\.jpg$/);
     }
   });
 

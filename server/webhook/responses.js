@@ -30,7 +30,14 @@ export function routineResponse(routine, heading) {
   });
 }
 
-export function exerciseResponse(exercise) {
+function resolveImageUrl(imagePath, publicBaseUrl) {
+  if (!imagePath) return null;
+  if (/^https:\/\//i.test(imagePath)) return imagePath;
+  if (!publicBaseUrl) return imagePath;
+  return new URL(imagePath, `${publicBaseUrl.replace(/\/$/, '')}/`).href;
+}
+
+export function exerciseResponse(exercise, publicBaseUrl) {
   const details = [
     `Grupo: ${exercise.tipo}`,
     `Músculos: ${exercise.musculos.join(', ')}`,
@@ -39,10 +46,11 @@ export function exerciseResponse(exercise) {
     `Errores frecuentes: ${exercise.errores.join(' ')}`,
   ];
   const blocks = [];
-  if (exercise.imageUrl) {
+  const imageUrl = resolveImageUrl(exercise.imagePath, publicBaseUrl);
+  if (imageUrl) {
     blocks.push({
       type: 'image',
-      rawUrl: exercise.imageUrl,
+      rawUrl: imageUrl,
       accessibilityText: `Ejecución de ${exercise.nombre}`,
     });
   }
