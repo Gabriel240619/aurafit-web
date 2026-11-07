@@ -17,16 +17,6 @@ function sendJson(response, statusCode, payload) {
   response.end(statusCode === 204 ? undefined : JSON.stringify(payload));
 }
 
-function publicBaseUrl(request) {
-  const configuredUrl = process.env.PUBLIC_BASE_URL?.trim();
-  if (configuredUrl) return configuredUrl.replace(/\/$/, '');
-  const forwardedProto = String(request.headers['x-forwarded-proto'] ?? '').split(',')[0].trim();
-  const protocol = forwardedProto === 'https' ? 'https' : request.socket.encrypted ? 'https' : 'http';
-  const forwardedHost = String(request.headers['x-forwarded-host'] ?? '').split(',')[0].trim();
-  const host = forwardedHost || request.headers.host || `localhost:${port}`;
-  return `${protocol}://${host}`;
-}
-
 async function sendExerciseAsset(request, response) {
   const pathname = new URL(request.url, 'http://localhost').pathname;
   const fileName = decodeURIComponent(pathname.slice('/assets/exercises/'.length));
@@ -75,10 +65,7 @@ export const server = http.createServer(async (request, response) => {
       return;
     }
     try {
-      const result = await handleDialogflowWebhook(
-        JSON.parse(rawBody || '{}'),
-        { publicBaseUrl: publicBaseUrl(request) },
-      );
+      const result = await handleDialogflowWebhook(JSON.parse(rawBody || '{}'));
       sendJson(response, 200, result);
     } catch (error) {
       console.error('Petición no válida:', error);

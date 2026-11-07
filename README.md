@@ -39,7 +39,7 @@ PORT=3001
 - `USDA_FDC_API_KEY`: clave de USDA FoodData Central. Debe obtenerse en su portal y no se versiona.
 - `USDA_FDC_BASE_URL`: URL base de la API nutricional.
 - `PORT`: puerto del webhook Node.js.
-- `PUBLIC_BASE_URL`: URL pública fija opcional para construir las URLs de imágenes. Con ngrok se detecta automáticamente desde la petición.
+- `PUBLIC_BASE_URL`: origen público opcional que sirve las imágenes (sin `/webhook`). Por defecto se usan rutas `/assets/exercises/` del mismo origen que la web: Vite las sirve desde `public/` y la compilación las copia a `dist/`. Así las imágenes no dependen del túnel de ngrok. Si usas Messenger fuera de esta web, configura aquí un origen HTTPS accesible que sirva esos archivos.
 
 Vite carga la configuración del frontend. El webhook carga explícitamente `.env` mediante `dotenv` y usa el almacén de certificados del sistema para las conexiones HTTPS salientes. Los archivos `.env` y `.env.local` están ignorados por Git.
 
@@ -71,6 +71,8 @@ ngrok http 3001
 ```
 
 Configura en **Fulfillment > Webhook** la URL pública seguida de `/webhook`. Una URL gratuita de ngrok es temporal y no debe considerarse una dirección permanente de entrega.
+
+Las fichas de ejercicios separan la imagen y la descripción en tarjetas distintas. Messenger oculta una tarjeta completa si falla su imagen; esta separación mantiene visibles los músculos, la técnica y los errores incluso si la imagen no carga. Para probar desde la web local, deja `PUBLIC_BASE_URL` vacío o sin definir. Si solo aparecen los botones con una versión anterior del webhook, reinícialo y repite la consulta.
 
 ## Agente de Dialogflow
 

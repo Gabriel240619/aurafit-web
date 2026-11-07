@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { readFile } from 'node:fs/promises';
+import { exercises } from '../server/data/exercises.js';
 import { InMemorySessionRepository } from '../server/repositories/sessionRepository.js';
 import { createDialogflowWebhook } from '../server/webhook/dialogflowWebhook.js';
 
@@ -29,6 +31,13 @@ function setup(nutritionResult = null) {
 }
 
 describe('webhook de Dialogflow', () => {
+  it('dispone de un JPEG válido para cada ejercicio en los archivos de la web', async () => {
+    for (const exercise of exercises) {
+      const image = await readFile(new URL(`../public${exercise.imagePath}`, import.meta.url));
+      assert.equal(image.readUInt16BE(0), 0xffd8, exercise.id);
+      assert.equal(image.readUInt16BE(image.length - 2), 0xffd9, exercise.id);
+    }
+  });
   it('crea y recupera exactamente la misma rutina', async () => {
     const { repository, webhook } = setup();
     const session = 'projects/test/agent/sessions/user-1';
@@ -71,11 +80,29 @@ describe('webhook de Dialogflow', () => {
     ];
     for (const ejercicio of exerciseIds) {
       const response = await webhook(request('ejercicio.consultar', { ejercicio }));
-      const blocks = response.fulfillmentMessages[0].payload.richContent[0];
+      const cards = response.fulfillmentMessages[0].payload.richContent;
+      const blocks = cards.flat();
       assert.ok(blocks.some((block) => block.type === 'description'), ejercicio);
       const image = blocks.find((block) => block.type === 'image');
       assert.match(image.rawUrl, /^https:\/\/aurafit\.test\/assets\/exercises\/.+\.jpg$/);
+      assert.ok(!cards.find((card) => card.includes(image))
+        .some((block) => block.type === 'description'),
+      'Una imagen rota no debe ocultar la información del ejercicio');
     }
+  });
+
+  it('sirve la imagen desde la web sin depender del host del túnel del webhook', async () => {
+    const webhook = createDialogflowWebhook({ publicBaseUrl: '', logger: silentLogger });
+    const response = await webhook(request('ejercicio.consultar', { ejercicio: 'press militar' }), {
+      publicBaseUrl: 'https://tunel-caducado.ngrok-free.app',
+    });
+    const blocks = response.fulfillmentMessages[0].payload.richContent.flat();
+    assert.equal(blocks.find((block) => block.type === 'image').rawUrl,
+      '/assets/exercises/press-militar.jpg');
+    const description = blocks.find((block) => block.type === 'description');
+    assert.equal(description.title, 'Press militar');
+    assert.ok(description.text.some((line) => line.startsWith('Técnica:')));
+    assert.ok(description.text.some((line) => line.startsWith('Errores frecuentes:')));
   });
 
   it('devuelve fallback para un ejercicio desconocido', async () => {

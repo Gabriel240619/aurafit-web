@@ -105,7 +105,7 @@ export function createDialogflowWebhook({
   publicBaseUrl = process.env.PUBLIC_BASE_URL,
 } = {}) {
   const activityService = createActivityService(repository, now);
-  return async function handleDialogflowWebhook(body, requestContext = {}) {
+  return async function handleDialogflowWebhook(body) {
     try {
       const action = body?.queryResult?.action;
       const parameters = body?.queryResult?.parameters ?? {};
@@ -130,7 +130,7 @@ export function createDialogflowWebhook({
         case 'ejercicio.consultar': {
           const exercise = findExercise(parameters.ejercicio);
           return exercise
-            ? exerciseResponse(exercise, requestContext.publicBaseUrl || publicBaseUrl)
+            ? exerciseResponse(exercise, publicBaseUrl)
             : textResponse('No encuentro ese ejercicio en el catálogo. Prueba con sentadilla, press de banca, press militar, dominadas, remo, peso muerto, peso muerto rumano, zancadas o plancha.');
         }
         case 'entrenamiento.registrar': {

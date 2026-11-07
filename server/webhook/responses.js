@@ -45,19 +45,23 @@ export function exerciseResponse(exercise, publicBaseUrl) {
     `Técnica: ${exercise.tecnica.join(' ')}`,
     `Errores frecuentes: ${exercise.errores.join(' ')}`,
   ];
-  const blocks = [];
+  const richContent = [];
   const imageUrl = resolveImageUrl(exercise.imagePath, publicBaseUrl);
   if (imageUrl) {
-    blocks.push({
+    // Messenger hides the entire card when an image fails to load. Keep the
+    // image in its own card so the exercise instructions always remain visible.
+    richContent.push([{
       type: 'image',
       rawUrl: imageUrl,
       accessibilityText: `Ejecución de ${exercise.nombre}`,
-    });
+    }]);
   }
-  blocks.push({ type: 'description', title: exercise.nombre, text: details });
-  blocks.push(chipsBlock('Continúa con AuraFit:', ['Ver rutina', 'Registrar entrenamiento']));
+  richContent.push([
+    { type: 'description', title: exercise.nombre, text: details },
+    chipsBlock('Continúa con AuraFit:', ['Ver rutina', 'Registrar entrenamiento']),
+  ]);
   return {
     fulfillmentText: exerciseText(exercise),
-    fulfillmentMessages: [{ payload: { richContent: [blocks] } }],
+    fulfillmentMessages: [{ payload: { richContent } }],
   };
 }
