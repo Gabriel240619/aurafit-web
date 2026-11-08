@@ -107,7 +107,7 @@ El ZIP no contiene una URL de webhook para evitar conservar un túnel de ngrok c
 - traduce un conjunto pequeño y explícito de aliases frecuentes del español al inglés;
 - prioriza alimentos genéricos frente a productos de marca;
 - extrae energía, proteína, carbohidratos, grasa y fibra;
-- aplica un timeout de siete segundos;
+- aplica un timeout de 3,5 segundos para dejar margen al límite de cinco segundos del webhook de Dialogflow ES;
 - responde de forma conversacional si falta la clave, no hay resultados o la API falla.
 
 Los resultados son valores orientativos, normalmente expresados por 100 g, y pueden variar según el producto y la preparación.

@@ -1,7 +1,9 @@
 import { normalizeValue } from './routineService.js';
 
 const DEFAULT_BASE_URL = 'https://api.nal.usda.gov/fdc/v1';
-const DEFAULT_TIMEOUT_MS = 7000;
+// Dialogflow ES allows five seconds for Messenger webhooks. Leave time for
+// processing and sending the conversational fallback when USDA is slow.
+const DEFAULT_TIMEOUT_MS = 3500;
 
 const foodAliases = new Map([
   ['platano', 'banana'], ['banana', 'banana'], ['manzana', 'apple'],
